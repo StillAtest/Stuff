@@ -1,5 +1,4 @@
-/* A tiny calculator to solve common base conversion and quadratic equations in one variable,
-*/
+// A tiny calculator to solve common base conversion.//
 #include<stdio.h>
 #include<math.h>
 #include<windows.h>
@@ -16,7 +15,6 @@ void mune()
     printf("**              4、Binary conversion to Decimal                 **\n");
     printf("**              5、Octal conversion to Decimal                 **\n");
     printf("**              6、Hexadecimal conversion to Decimal               **\n");
-    printf("**              7.Solve quadratic equations in one variable                **\n");
     printf("**              0、Quit                              **\n");
     printf("**                                                  **\n");
     printf("******************************************************\n");
@@ -127,24 +125,6 @@ void SixteenToTen()
     printf("The decimal number is %d\n", num, num);//C has already provided such a conversion
 }
 
-void QEIOV()
-{
-    int a, b, c, x1, x2;
-    printf("Input the equation's a,b and c\n");
-    scanf("%d %d %d", &a, &b, &c);//To get the values of there variables
-    if (b*b-4*a*c<0)
-    {
-        printf("No real roots");
-    }//To judge whether there exist the real root
-    else 
-    {
-        x1 = (-b+sqrt(b*b-4*a*c))/(2*a);
-        x2 = (-b-sqrt(b*b-4*a*c))/(2*a);
-        printf("the output is：x1=%0.2f,x2=%0.2f", x1, x2);
-    }//Printf the root if there exist the real one
-    return;
-}
-
 int main()
 {
     int n = 0;
@@ -166,8 +146,6 @@ int main()
         case 5:EightToTen();
             break;
         case 6:SixteenToTen();
-            break;
-        case 7:QEIOV();
             break;
         case 0:
             exit(0);
