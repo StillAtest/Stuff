@@ -4,7 +4,7 @@
  *整个排序过程可以递归进行;
  *以此达到整个数据变成有序序列;
  *StudentId:202010420227;
- *Date:3.22 */
+ *Date:3.31 */
 
 #include<stdio.h>
 #include<windows.h>
