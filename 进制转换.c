@@ -1,4 +1,4 @@
-/* A tiny calculator to solve common base conversion;
+/* A tiny source code to solve common base conversion;
  *StudentId:202010420227;
  *Date:3.20 */
 #include<stdio.h>
