@@ -1,3 +1,10 @@
+/*N people form a circle, start counting from the first one;
+ *the M-th will be killed, and the last one will be left;
+ *and the rest will be killed. For example;
+ *N=6, M=5, the order of being killed is: 5, 4, 6, 2, 3;
+ *StudentId:202010420227;
+ *Date:3.27 */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include<windows.h>
@@ -48,7 +55,7 @@ int findAndKillK(link *p,int k, int m){
         
         find=find->next;
     }
-    printf("已经找到编号为k的：%d\n",find->data);
+    printf("Has found number k：%d\n",find->data);
     //Now the find->data is k
     //Starting from number k, it ends when only one is left. Others have been eliminated
     link * temp2=NULL;
